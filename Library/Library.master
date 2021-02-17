@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Library.master.cs" Inherits="Library_Library" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <link rel="stylesheet" href="/css/boot/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/Style.css" />
+    <style>
+        #Heading{
+            
+            justify-content:center;
+            
+        }
+        body {
+            font-family: "Lato", sans-serif;
+            background: url("/Images/libimg.jpg") center center/cover;
+        }
+    .logo{
+        width:160px;
+        height:100%;
+        display:block;
+        position:center;
+    }
+
+.sidenav {
+  height: 100%;
+  width: 163px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: aquamarine;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: azure;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+
+    <div class="sidenav">
+  <a href="#home">Home</a><br />
+  <a href="#addbooks">Add Books</a><br />
+  <a href="#addstud">Issue Book</a><br />
+  <a href="#bookdetails">Return Book</a><br />
+  <a href="#studsdetails">Fine Management</a><br />
+ <%-- <a href="#searchbooks">E-Pract</a>--%>
+  <a href="#updatebooks"> Previous Year Question papers</a><br />
+  <a href="#rules">Rules</a>
+</div>
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+  
+</body>
+</html>
